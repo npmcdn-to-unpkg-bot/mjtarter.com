@@ -1,0 +1,82 @@
+#code-outer {
+    position:absolute;
+    top:0;
+    left:0;
+    width:50%;
+    height:100%;
+}
+
+#fitness-outer {
+    position:absolute;
+    top:0;
+    left:50%;
+    width:50%;
+    height:100%;
+}
+
+#code-container {
+	width:100%;
+	height:100%;
+	display:table;
+	z-index: 1;
+}
+
+.code-section {
+	padding: 10px 0px;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.videos-overlay {
+		background-color: rgba(255,255,255,.7);
+		padding:10px 0px;
+
+}
+
+.button {
+  box-shadow: 4px 4px #E0E0E0;
+  border-radius: 5px;
+  background:gray;
+  color:white;
+}
+    .button:hover {
+    	color: #ffffff;
+    	background-color: #000000;
+    	box-shadow: 5px 5px #D8D8D8;
+    }
+
+.vid-left {
+	position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 50%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-100%) translateY(-50%);
+    background: url(polina.jpg) no-repeat;
+    background-size: cover;
+    border-right:3px solid silver;
+}
+
+.vid-right {
+	position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 50%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    -ms-transform: translateX(50%) translateY(50%);
+    -moz-transform: translateX(50%) translateY(50%);
+    -webkit-transform: translateX(50%) translateY(50%);
+    transform: translateX(0%) translateY(-50%);
+    background: url(polina.jpg) no-repeat;
+    background-size: cover;
+    border-left:3px solid silver;
+}
