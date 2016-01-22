@@ -1,13 +1,17 @@
+/* GLOBAL STYLES */
+
+ul {
+    list-style:none;
+}
+
+/* END GLOBAL STYLES */
+
 #code-outer {
     position:absolute;
     top:0;
     left:0;
     width:50%;
     height:100%;
-}
-
-h1 {
-	color:white;
 }
 
 #fitness-outer {
@@ -25,11 +29,33 @@ h1 {
 	z-index: 1;
 }
 
-.code-section {
+.code-section, .fitness-section {
 	padding: 10px 0px;
 	display: table-cell;
 	vertical-align: middle;
+    background-color: rgba(0,0,0,.5);
+    color:white;
 }
+
+    .code-section h1, .fitness-section h1 {
+        color:orange;
+    }
+
+    .code-section h2, .fitness-section h2 {
+        color:white; 
+        padding:10px 10px;
+    }
+
+    .code-section hr, .fitness-section hr {
+        background-color:orange; 
+        height:5px; 
+        width:60%;
+    }
+
+    .code-section img, .fitness-section img {
+        border-radius:50%; 
+        width:70px;
+    }
 
 .videos-overlay {
 		background-color: rgba(255,255,255,.7);
@@ -40,7 +66,10 @@ h1 {
 .button {
   box-shadow: 4px 4px #E0E0E0;
   border-radius: 5px;
-  background:gray;
+  background:orange;
+  font-size:20px;
+  width:170px;
+  padding:10px 0px;
   color:white;
 }
     .button:hover {
