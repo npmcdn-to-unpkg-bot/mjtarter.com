@@ -4,6 +4,11 @@ ul {
     list-style:none;
 }
 
+.vert-middle {
+    display:table-cell; 
+    vertical-align:middle;
+}
+
 /* END GLOBAL STYLES */
 
 /* Index page */
@@ -113,4 +118,88 @@ ul {
     background: url(polina.jpg) no-repeat;
     background-size: cover;
     border-left:3px solid silver;
+}
+/* End Index Page */
+
+/* Fitness */
+
+#my-video {
+  max-width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Web Development */
+
+#hero {
+    background-image: url(../img/code.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width:100%;
+    height:550px;
+    color:white; 
+    position:relative;
+}
+
+    #hero h1 {
+        font-weight:bolder; 
+        margin-top:0px;
+    }
+
+.hero-container {
+    display:table; 
+    height:550px;
+}
+
+.box {
+    border: solid 1px #d8d8d8;
+    margin-bottom: 1.25rem;
+    padding: 1.25rem;
+    background: linear-gradient(rgba(242, 242, 242, .6), rgba(242, 242, 242, .6));
+    color: #333333;
+    margin-left:5%;
+}
+
+    .box img {
+        height:150px; 
+        display:block; 
+        margin:0 auto;
+    }
+
+nav {
+    height:60px;
+    width:100%;
+    background-color: #4bbbeb;
+    color:white;
+}
+
+    nav p {
+        display:inline-block; 
+        padding-top:10px;
+    }
+
+    nav i {
+        padding-top:2px;
+    }
+
+    nav ul {
+        float:right;
+        font-size:18px; 
+    }
+
+        nav ul li {
+            display:inline-block; 
+            padding:18px;
+        }
+
+.social-icons {
+    padding: 25px 12px 0px 12px;
+}
+
+.scroll-icon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: white;
 }
