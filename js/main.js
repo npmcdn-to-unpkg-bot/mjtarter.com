@@ -20,7 +20,7 @@ $( document ).ready( function() {
   };
 
   // bind filter button click
-  $('#filters').on( 'click', 'button', function() {
+  $('#filters').on( 'click', 'input', function() {
     var filterValue = $( this ).attr('data-filter');
     // use filterFn if matches value
     filterValue = filterFns[ filterValue ] || filterValue;
@@ -28,9 +28,9 @@ $( document ).ready( function() {
   });
   
   // change is-checked class on buttons
-  $('.button-group').each( function( i, buttonGroup ) {
+  $('.ff-container').each( function( i, buttonGroup ) {
     var $buttonGroup = $( buttonGroup );
-    $buttonGroup.on( 'click', 'button', function() {
+    $buttonGroup.on( 'click', 'input', function() {
       $buttonGroup.find('.is-checked').removeClass('is-checked');
       $( this ).addClass('is-checked');
     });
