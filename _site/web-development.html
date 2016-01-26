@@ -17,7 +17,7 @@
 	<div class="container">
 		<div class="col-sm-4">
 			<i class="fa fa-4x fa-laptop pull-left"></i>
-			<p><b>Matt Tarter<br>Web Development</b></p>
+			<p><b><span style="padding-left:25px;">Matt Tarter</span><br>Web Development</b></p>
 		</div>
 		<div class="col-sm-8">
 			<ul>
@@ -71,6 +71,59 @@
 	</div>
 </div>
 
+<div id="portfolio">
+	<div class="container">
+		<div id="filters" class="button-group">
+		  <div class="row">
+		    <div class="large-12 columns">
+		      <h4>Filter Jobs</h4>
+		      <button class="button is-checked" data-filter="*">show all</button>
+		      <div class="button-default button-slanted">
+		        <button class="button-slanted-content" data-filter=".rails">Rails</button>
+		      </div>
+		      <div class="button-default button-slanted">
+		        <button class="button-slanted-content" data-filter=".javascript">Javascript</button>
+		      </div>
+		      <div class="button-default button-slanted">
+		        <button class="button-slanted-content" data-filter=".dev-ops">Dev Ops</button>
+		      </div>
+		      <div class="button-default button-slanted">
+		        <button class="button-slanted-content" data-filter=".aws-s3">AWS/S3</button>
+		      </div>
+		      <div class="button-default button-slanted">
+		        <button class="button-slanted-content" data-filter=".ios-android">iOS/Android</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<div class="isotope">  
+		  <div class="row">
+		    <div class="col-md-4 element-item javascript " data-category="javascript">
+		      <img src="img/ted-green-films-website.png" class="img-responsive">
+		    </div>
+		    <div class="col-md-4 element-item ios-android " data-category="ios-android">
+		      <img src="img/mci-responsive.png" class="img-responsive">
+		    </div>
+		    <div class="col-md-4 element-item javascript " data-category="javascript">
+		      <img src="img/dropping-dimes-responsive.png" class="img-responsive">
+		    </div>
+		  </div>
+		  <div class="row">
+		    <div class="col-md-4 element-item javascript " data-category="javascript">
+		      <img src="img/dropping-dimes-responsive.png" class="img-responsive">
+		    </div>
+		    <div class="col-md-4 element-item ios-android " data-category="ios-android">
+		      <img src="img/abrams-eyecare-website.png" class="img-responsive">
+		    </div>
+		    <div class="col-md-4 element-item javascript " data-category="javascript">
+		      <img src="img/ted-green-films-website.png" class="img-responsive">
+		    </div>
+		  </div>
+		</div>
+	</div>
+</div>
+
 
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
@@ -81,6 +134,8 @@
         $('#my-video').backgroundVideo();
       });
     </script>
+    <script src="js/vendor/isotope/isotope.pkgd.min.js"></script>
+    <script src="js/main.js"></script>
 
   </body>
 </html>
