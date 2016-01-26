@@ -1,15 +1,10 @@
-$('#mycontainer').mosaicflow({
-    itemSelector: '.mosaicflow__item',
-    minItemWidth: 320,
-});
-
 // custom isotope JS - Sort jobs by tags
 
 $( document ).ready( function() {
   // init Isotope
   var $container = $('.isotope').isotope({
     itemSelector: '.element-item',
-    layoutMode: 'masonry',
+    layoutMode: 'fitRows',
     getSortData: {
       name: '.name',
     }

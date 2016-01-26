@@ -207,15 +207,3 @@ nav {
 #portfolio {
     background: #f0f0f0
 }
-
-
-.mosaicflow__column {
-    float:left;
-    }
-.mosaicflow__item img {
-    display:block;
-    width:100%;
-    height:auto;
-    padding:7px;
-    border-radius:11px;
-}
