@@ -1,4 +1,4 @@
-// custom isotope JS - Sort jobs by tags
+// custom isotope JS - Sort portfolio projects by type
 
 $( document ).ready( function() {
   // init Isotope
