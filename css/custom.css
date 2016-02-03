@@ -311,6 +311,17 @@ ul.candy li:hover {
     border-top:5px solid #b7e3f7;
 }
 
+#startups {
+    background-color:#f0f0f0;
+    padding:50px 0px;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.65), 
+      rgba(0, 0, 0, 0.55)
+    ), url('../img/startups.jpg');
+    height: 650px;
+    background-size:cover;
+}
+
 .hero-space {
 height: 17px;
 width:50%;
