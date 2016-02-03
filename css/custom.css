@@ -300,11 +300,15 @@ ul.candy li:hover {
 #about {
     background-color:#f0f0f0;
     padding:50px 0px;
+    border-bottom:5px solid #fafafa;
+    border-top: 5px solid #c0c0c0;
 }
 
 #contact {
-    background-color:#f0f0f0;
+    background-color:#4bbbeb;
     padding:40px 0px;
+    color:white;
+    border-top:5px solid #b7e3f7;
 }
 
 .hero-space {
@@ -340,4 +344,23 @@ width:50%;
 .element-item:hover {
     color: #fff;
     opacity: 0.5;
+}
+
+.form-control {
+    background:transparent;
+    color:#fff !important;
+    font-weight:bold;
+    border:2px solid white;
+    margin:25px 0px;
+}
+
+.form-control::-webkit-input-placeholder { color: white; }
+.form-control:-moz-placeholder { color: white; }
+.form-control::-moz-placeholder { color: white; }
+.form-control:-ms-input-placeholder { color: white; }
+
+.copyright {
+    padding:10px 0px;
+    font-size: .8em;
+    border-top:5px solid #b7e3f7;
 }
