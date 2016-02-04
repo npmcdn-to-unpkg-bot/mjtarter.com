@@ -316,9 +316,20 @@ ul.candy li:hover {
     padding:50px 0px;
     background: linear-gradient(
       rgba(0, 0, 0, 0.65), 
-      rgba(0, 0, 0, 0.55)
+      rgba(0, 0, 0, 0.65)
     ), url('../img/startups.jpg');
-    height: 650px;
+    height: 700px;
+    background-size:cover;
+}
+
+#quote {
+    background-color:#f0f0f0;
+    padding:50px 0px;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.15), 
+      rgba(0, 0, 0, 0.15)
+    ), url('../img/denver.jpg');
+    height: 350px;
     background-size:cover;
 }
 
