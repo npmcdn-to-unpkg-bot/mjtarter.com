@@ -134,14 +134,16 @@ ul {
 
 /* Web Development */
 
+html, body {margin:0;padding:0;height:100%;}
+
 #hero {
     background-image: url(../img/code.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     width:100%;
-    height:550px;
     color:white; 
     position:relative;
+    height:100%;
 }
 
     #hero h1 {
@@ -161,7 +163,8 @@ ul {
 
 .hero-container {
     display:table; 
-    height:550px;
+    height:100%;
+    padding-top:30px;
 }
 
 .box {
@@ -184,6 +187,8 @@ nav {
     width:100%;
     background-color: #4bbbeb;
     color:white;
+    position:absolute;
+    z-index:10;
 }
 
     nav a {
@@ -241,15 +246,28 @@ ul.skills li {
     clear: both;
     font-size: 14px;
     line-height: 14px;
-    padding: 10px 5px;
     margin: 0 0 5px 0;
-    background: white;
+    background: #d8d8d8;
     font-style: italic;
-    border:1px solid gray;
+    border:1px solid black;
+    color:white;
+    border-radius:2px;
 }
 
 ul.skills li i {
-    color: black;
+    color: #f9f9f9;
+}
+
+ul.skills li:hover {
+    -webkit-animation: pulse 1s;
+    animation: pulse 1s;
+}
+
+.stats {
+    background-color:#4bbbeb; 
+    font-weight: bold;
+    padding:10px 5px;
+    border-right:1px solid black;
 }
 
 #portfolio {
@@ -323,17 +341,22 @@ ul.candy li {
 
 ul.candy li:hover {
     opacity: 1;
+    -webkit-animation: jello 1s;
+    animation: jello 1s;
 }
 
 #about {
     background-color:#f0f0f0;
     padding:50px 0px;
-    border-bottom:5px solid #fafafa;
+    border-bottom: 5px solid #c0c0c0;
     border-top: 5px solid #c0c0c0;
 }
 
     #about img {
         border-radius:50%; 
+        box-shadow:
+            0 0 0 10px hsl(0, 0%, 80%),
+            0 0 0 15px hsl(0, 0%, 90%);
         width:125px; 
         display:block; 
         margin:0px auto 0px auto;
@@ -342,6 +365,11 @@ ul.candy li:hover {
     #about p {
         font-size: 17px; 
         padding:0px 25px;
+    }
+
+    ul.candy li:hover {
+        color:#4bbbeb;
+        border-color:#4bbbeb;
     }
 
 #contact {
