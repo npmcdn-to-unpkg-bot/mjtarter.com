@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Preload images so that isotope does not overlap them in the grid -->
     <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/slicknav.min.css" />
     <link rel="stylesheet" href="css/custom.css" />
     <link rel="stylesheet" href="css/responsive.css" />
@@ -76,6 +78,23 @@
     </script>
     <script src="js/vendor/isotope/isotope.pkgd.min.js"></script>
     <script src="js/main.js"></script>
+    <!-- smooth scroll -->
+    <script>
+      $(function() {
+        $('a[href*="#"]:not([href="#"])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html, body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      });
+    </script>
 
   </body>
 </html>

@@ -11,7 +11,7 @@ ul {
 
 /* END GLOBAL STYLES */
 
-/* Index page */
+/* LANDING PAGE */
 #code-outer {
     position:absolute;
     top:0;
@@ -119,7 +119,8 @@ ul {
     background-size: cover;
     border-left:3px solid silver;
 }
-/* End Index Page */
+/* End LANDING  PAGE */
+
 
 /* Fitness */
 
@@ -129,6 +130,7 @@ ul {
   left: 0;
   top: 0;
 }
+
 
 /* Web Development */
 
@@ -145,6 +147,16 @@ ul {
     #hero h1 {
         font-weight:bolder; 
         margin-top:0px;
+    }
+
+    #hero a {
+        color:white;
+    }
+
+    #hero a i:hover {
+        color:#4bbbeb;
+        -webkit-animation: pulse 1s;
+        animation: pulse 1s; 
     }
 
 .hero-container {
@@ -174,6 +186,10 @@ nav {
     color:white;
 }
 
+    nav a {
+        color:white !important;
+    }
+
     nav p {
         display:inline-block; 
         padding-top:11px;
@@ -191,6 +207,18 @@ nav {
         nav ul li {
             display:inline-block; 
             padding:18px;
+            font-weight:bold;
+        }
+
+         nav ul li:hover {
+            -webkit-animation: pulse 1s;
+            animation: pulse 1s;
+             -webkit-transition: all 0.4s ease-in;
+            -moz-transition: all 0.4s ease-in;
+            -o-transition: all 0.4s ease-in;
+            color:white;
+            background:#c0c0c0;
+            outline:2px solid white;
         }
 
 .slicknav_menu {
@@ -303,6 +331,18 @@ ul.candy li:hover {
     border-bottom:5px solid #fafafa;
     border-top: 5px solid #c0c0c0;
 }
+
+    #about img {
+        border-radius:50%; 
+        width:125px; 
+        display:block; 
+        margin:0px auto 0px auto;
+    }
+
+    #about p {
+        font-size: 17px; 
+        padding:0px 25px;
+    }
 
 #contact {
     background-color:#4bbbeb;
