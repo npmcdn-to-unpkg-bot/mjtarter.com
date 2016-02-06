@@ -4,6 +4,12 @@ ul {
     list-style:none;
 }
 
+html, body {
+    margin:0;
+    padding:0;
+    height:100%;
+}
+
 .vert-middle {
     display:table-cell; 
     vertical-align:middle;
@@ -134,54 +140,6 @@ ul {
 
 /* Web Development */
 
-html, body {margin:0;padding:0;height:100%;}
-
-#hero {
-    background-image: url(../img/code.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    width:100%;
-    color:white; 
-    position:relative;
-    height:100%;
-}
-
-    #hero h1 {
-        font-weight:bolder; 
-        margin-top:0px;
-    }
-
-    #hero a {
-        color:white;
-    }
-
-    #hero a i:hover {
-        color:#4bbbeb;
-        -webkit-animation: pulse 1s;
-        animation: pulse 1s; 
-    }
-
-.hero-container {
-    display:table; 
-    height:100%;
-    padding-top:30px;
-}
-
-.box {
-    border: solid 1px #d8d8d8;
-    margin-bottom: 1.25rem;
-    padding: 1.25rem;
-    background: linear-gradient(rgba(242, 242, 242, .6), rgba(242, 242, 242, .6));
-    color: #333333;
-    margin-left:5%;
-}
-
-    .box img {
-        height:150px; 
-        display:block; 
-        margin:0 auto;
-    }
-
 nav {
     height:60px;
     width:100%;
@@ -230,6 +188,61 @@ nav {
     display:none;
 }
 
+#hero {
+    background-image: url(../img/code.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width:100%;
+    color:white; 
+    position:relative;
+    height:100%;
+}
+
+    #hero h1 {
+        font-weight:bolder; 
+        margin-top:0px;
+        font-size:44px;
+    }
+
+    #hero h3 {
+        padding:10px 0px;
+    }
+
+    #hero hr {
+        padding-bottom: 10px;
+    }
+
+    #hero a {
+        color:white;
+    }
+
+    #hero a i:hover {
+        color:#4bbbeb;
+        -webkit-animation: pulse 1s;
+        animation: pulse 1s; 
+    }
+
+.hero-container {
+    display:table; 
+    height:100%;
+    padding-top:30px;
+}
+
+.box {
+    border: solid 1px #d8d8d8;
+    margin-bottom: 1.25rem;
+    padding: 1.25rem;
+    background: linear-gradient(rgba(242, 242, 242, .6), rgba(242, 242, 242, .6));
+    color: #333333;
+    margin-left:5%;
+}
+
+    .box img {
+        height:150px; 
+        display:block; 
+        margin:0 auto;
+    }
+
 .social-icons {
     padding: 25px 12px 0px 12px;
 }
@@ -240,6 +253,51 @@ nav {
   right: 10px;
   color: white;
 }
+
+#about {
+    background-color:#f0f0f0;
+    padding:50px 0px;
+    border-bottom: 5px solid #c0c0c0;
+    border-top: 5px solid #c0c0c0;
+}
+
+    #about img {
+        border-radius:50%; 
+        box-shadow:
+            0 0 0 10px hsl(0, 0%, 80%),
+            0 0 0 15px hsl(0, 0%, 90%);
+        width:125px; 
+        display:block; 
+        margin:0px auto 0px auto;
+    }
+
+    #about p {
+        font-size: 17px; 
+        padding:0px 25px;
+        margin-bottom:50px;
+    }
+
+    #about h3 {
+        margin-top: 0px;
+    }
+
+ul.tools li {
+    display: inline-block;
+    padding: 2px 10px;
+    border: 1px solid #7E8385;
+    margin-bottom: 5px;
+    margin-right: 3px;
+    list-style: none;
+    background: white;
+}
+
+    ul.tools li:hover {
+        opacity: 1;
+        -webkit-animation: jello 1s;
+        animation: jello 1s;
+        color:#4bbbeb;
+        border-color:#4bbbeb;
+    }
 
 ul.skills li {
     display: block;
@@ -254,14 +312,14 @@ ul.skills li {
     border-radius:2px;
 }
 
-ul.skills li i {
-    color: #f9f9f9;
-}
+    ul.skills li i {
+        color: #f9f9f9;
+    }
 
-ul.skills li:hover {
-    -webkit-animation: pulse 1s;
-    animation: pulse 1s;
-}
+    ul.skills li:hover {
+        -webkit-animation: pulse 1s;
+        animation: pulse 1s;
+    }
 
 .stats {
     background-color:#4bbbeb; 
@@ -269,6 +327,48 @@ ul.skills li:hover {
     padding:10px 5px;
     border-right:1px solid black;
 }
+
+.about-divider {
+    height: 17px;
+    width:50%;
+    background: url('../img/hr.png') no-repeat;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    background-position: top center;
+}
+
+.btn-transparent {
+    border:2px solid #4bbbeb;
+    padding:.8em 1.6em;
+    color:#4bbbeb !important;
+    font-weight:bold;
+    font-size:1.2em;
+}
+
+    .btn-transparent:hover {
+        color:#4bbbeb;
+        background:white;
+        border:2px solid #4bbbeb;
+        text-decoration: none;
+    }
+
+.btn-blue {
+    background:#4bbbeb;
+    border:2px solid white;
+    padding:.8em 1.6em;
+    color:white !important;
+    font-weight:bold;
+    font-size:1.2em;
+}
+
+    .btn-blue:hover {
+        color:#4bbbeb;
+        background:white;
+        border:2px solid #4bbbeb;
+        text-decoration:none;
+    }
+
 
 #portfolio {
     background-color:white;
@@ -329,49 +429,6 @@ ul.skills li:hover {
     display: none;
 }
 
-ul.candy li {
-    display: inline-block;
-    padding: 2px 10px;
-    border: 1px solid #7E8385;
-    margin-bottom: 5px;
-    margin-right: 3px;
-    list-style: none;
-    background: white;
-}
-
-ul.candy li:hover {
-    opacity: 1;
-    -webkit-animation: jello 1s;
-    animation: jello 1s;
-}
-
-#about {
-    background-color:#f0f0f0;
-    padding:50px 0px;
-    border-bottom: 5px solid #c0c0c0;
-    border-top: 5px solid #c0c0c0;
-}
-
-    #about img {
-        border-radius:50%; 
-        box-shadow:
-            0 0 0 10px hsl(0, 0%, 80%),
-            0 0 0 15px hsl(0, 0%, 90%);
-        width:125px; 
-        display:block; 
-        margin:0px auto 0px auto;
-    }
-
-    #about p {
-        font-size: 17px; 
-        padding:0px 25px;
-    }
-
-    ul.candy li:hover {
-        color:#4bbbeb;
-        border-color:#4bbbeb;
-    }
-
 #contact {
     background-color:#4bbbeb;
     padding:40px 0px;
@@ -399,36 +456,6 @@ ul.candy li:hover {
     ), url('../img/denver.jpg');
     height: 350px;
     background-size:cover;
-}
-
-.hero-space {
-height: 17px;
-width:50%;
-    background: url('../img/hr.png') no-repeat;
-    margin: 0 auto;
-    margin-top: 50px;
-    margin-bottom: 25px;
-    background-position: top center;
-}
-
-.bn {
-    background:tansparent;
-    border:2px solid #4bbbeb;
-    padding:.8em 1.6em;
-    color:#4bbbeb;
-    text-decoration:underline;
-    font-weight:bold;
-    font-size:1.2em;
-}
-
-.be {
-    background:#4bbbeb;
-    border:2px solid white;
-    padding:.8em 1.6em;
-    color:white;
-    text-decoration:underline;
-    font-weight:bold;
-    font-size:1.2em;
 }
 
 .element-item:hover {
