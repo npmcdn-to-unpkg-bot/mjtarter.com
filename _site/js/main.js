@@ -1,12 +1,9 @@
 // custom isotope JS - Sort portfolio projects by type
 // init Isotope
 
-$( document ).ready( function() {
+$(window).load(function(){
   // init Isotope
   var $container = $('.isotope').isotope({
-    // layout Isotope after each image loads
-    $container.imagesLoaded().progress( function() {
-    $container.isotope('layout');
     itemSelector: '.element-item',
     layoutMode: 'fitRows',
     getSortData: {
