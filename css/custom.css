@@ -10,9 +10,18 @@ html, body {
     height:100%;
 }
 
+body {
+    font-family: 'Ubuntu', sans-serif !important;
+}
+
 .vert-middle {
     display:table-cell; 
     vertical-align:middle;
+}
+
+.img-center {
+    display:block; 
+    margin: 0px auto;
 }
 
 /* END GLOBAL STYLES */
@@ -357,7 +366,7 @@ ul.skills li {
     background:#4bbbeb;
     border:2px solid white;
     padding:.8em 1.6em;
-    color:white !important;
+    color:white;
     font-weight:bold;
     font-size:1.2em;
 }
@@ -432,7 +441,7 @@ ul.skills li {
 
 #portfolio {
     background-color:white;
-    padding:40px 0px;
+    padding:40px 0px 50px 0px;
 }
 
 .element-item {
@@ -444,7 +453,6 @@ ul.skills li {
 }
 
 #filters label{
-    font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
     margin:10px 0px 30px 0px;
     width: 16.66666666666667%;
     height: 30px;
@@ -488,6 +496,42 @@ ul.skills li {
     display: none;
 }
 
+.folio-img{
+    color:transparent;
+}
+
+.folio-img:hover .img-wrap {
+    background-color: black;
+    border-radius:3px;
+     -webkit-transition: all 0.4s ease-in;
+    -moz-transition: all 0.4s ease-in;
+    -o-transition: all 0.4s ease-in;
+    color:white;
+    text-align:center;
+}
+
+.folio-img:hover img {
+    opacity: 0.3;
+    border-radius:3px;
+    -webkit-transition: all 0.4s ease-in;
+    -moz-transition: all 0.4s ease-in;
+    -o-transition: all 0.4s ease-in;
+    z-index:1;
+}
+
+.portfolio-overlay {
+    position:absolute; 
+    text-align:center; 
+    margin-top:20px; 
+    font-size:20px; 
+    z-index:10; 
+    font-weight:bold; 
+    width:94%; 
+    opacity:1;
+    padding-right:3%;
+    padding-left:3%;
+}
+
 #contact {
     background-color:#4bbbeb;
     padding:40px 0px;
@@ -497,32 +541,41 @@ ul.skills li {
 
 #startups {
     background-color:#f0f0f0;
-    padding:50px 0px;
+    padding:70px 0px 100px 0px;
     background: linear-gradient(
       rgba(0, 0, 0, 0.65), 
       rgba(0, 0, 0, 0.65)
     ), url('../img/startups.jpg');
-    height: 700px;
     background-size:cover;
+    border-top: 5px solid #c0c0c0;
+    color:white;
 }
 
-.element-item:hover .corky {
-    color: #fff;
-    background:;
-    -webkit-animation: fadeInDown 1s;
-    animation: fadeInDown 1s;
-     -webkit-transition: all 0.4s ease-in;
-    -moz-transition: all 0.4s ease-in;
-    -o-transition: all 0.4s ease-in;
-    background: rgba(255,255,255,0.4);
-
+#center-wrap {
+  float: left;
+  position: relative;
+  left: 50%;
 }
 
-.corky{
-    color:transparent;
-    height:100%;
-    width:100%;
+#center-content { 
+  float: left;
+  position: relative;
+  left: -50%;
 }
+
+.mci {
+    font-size:30px;
+    padding-bottom:30px;
+}
+
+    ul.mci li {
+        padding:10px 0px;
+        text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    ul.mci li i {
+        color:#4bbbeb;
+    }
 
 .form-control {
     background:transparent;
@@ -532,13 +585,34 @@ ul.skills li {
     margin:25px 0px;
 }
 
+.form-btn {
+    border:2px solid #b7e3f7;
+    padding:.8em 1.6em;
+    color:#4bbbeb !important;
+    font-weight:bold;
+    font-size:1.2em;
+    background:white;
+}
+
+    .form-btn:hover {
+        background:#f0f0f0;
+        text-decoration: none;
+    }
+
 .form-control::-webkit-input-placeholder { color: white; }
 .form-control:-moz-placeholder { color: white; }
 .form-control::-moz-placeholder { color: white; }
 .form-control:-ms-input-placeholder { color: white; }
 
+input[type=text]:focus, textarea:focus {
+  box-shadow: 0 0 20px #b7e3f7 !important;
+  border: 2px solid white !important;
+}
+
 .copyright {
     padding:10px 0px;
     font-size: .8em;
     border-top:5px solid #b7e3f7;
+    background-color:white;
+    color:black;
 }
