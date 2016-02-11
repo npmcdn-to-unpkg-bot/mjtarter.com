@@ -112,7 +112,6 @@ body {
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-100%) translateY(-50%);
-    background: url(polina.jpg) no-repeat;
     background-size: cover;
     border-right:3px solid silver;
 }
@@ -130,7 +129,6 @@ body {
     -moz-transform: translateX(50%) translateY(50%);
     -webkit-transform: translateX(50%) translateY(50%);
     transform: translateX(0%) translateY(-50%);
-    background: url(polina.jpg) no-repeat;
     background-size: cover;
     border-left:3px solid silver;
 }
@@ -205,6 +203,7 @@ nav {
     color:white; 
     position:relative;
     height:100%;
+    min-height:700px;
 }
 
     #hero h1 {
@@ -392,6 +391,7 @@ ul.skills li {
     height:100%;
     width:100%;
     overflow: hidden;
+    background-image: url('../img/denver.png');
 }
 
     .header-unit video {
@@ -442,6 +442,8 @@ ul.skills li {
 #portfolio {
     background-color:white;
     padding:40px 0px 50px 0px;
+    max-width:1500px;
+    margin:0 auto;
 }
 
 .element-item {
@@ -450,6 +452,10 @@ ul.skills li {
 
 .portfolio-img {
     border-radius:3px;
+    margin-left:auto; 
+    margin-right:auto; 
+    display:block;
+    width:100%;
 }
 
 #filters label{
@@ -460,7 +466,7 @@ ul.skills li {
     color: #777;
     text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
     line-height: 33px;
-    font-size: 19px;
+    font-size: 16px;
     background:white;
     float:left;
     text-align:center;
@@ -566,6 +572,8 @@ ul.skills li {
 .mci {
     font-size:30px;
     padding-bottom:30px;
+    padding-left:0px;
+    padding-right:0px;
 }
 
     ul.mci li {

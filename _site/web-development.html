@@ -14,18 +14,17 @@
     <link rel="stylesheet" href="css/slicknav.min.css" />
     <link rel="stylesheet" href="css/custom.css" />
     <link rel="stylesheet" href="css/responsive.css" />
-    <script src="js/main-head.js"></script>
 
   </head>
   <body>
 
     <nav class="animated bounceInUp">
-	<div class="container">
-		<div class="col-sm-4">
+	<div class="container" id="nav-wrapper">
+		<div class="col-sm-4 hidden-sm">
 			<i class="fa fa-4x fa-laptop pull-left"></i>
 			<p><b><span style="padding-left:25px;">Matt Tarter</span><br>Web Development</b></p>
 		</div>
-		<div class="col-sm-8">
+		<div class="col-sm-12 col-md-8">
 			<ul id="menu">
 				<a href="#"><li>Home</li></a>
 				<a href="#about"><li>About</li></a>
@@ -47,19 +46,19 @@
 			<div class="row">
 				<div class="col-lg-10 col-lg-offset-1">
 					<div class="row text-center">
-						<div class="col-sm-4">
+						<div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0">
 							<div class="box">
 								<img src="/img/icon8.png">
 								<h3>Web Development</h3>
 							</div>
 						</div>
-						<div class="col-sm-4">
+						<div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0">
 							<div class="box">
 								<img src="/img/app.png">
 								<h3>Web Apps</h3>
 							</div>
 						</div>
-						<div class="col-sm-4">
+						<div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0">
 							<div class="box">
 								<img src="/img/ecomm.png">
 								<h3>E-Commerce</h3>
@@ -72,7 +71,7 @@
 				<a href="https://www.linkedin.com/in/mjtarter" target="_blank"><i class="fa fa-3x fa-linkedin-square social-icons"></i></a>
 				<a href="https://github.com/mjtarter" target="_blank"><i class="fa fa-3x fa-github-square social-icons"></i></a>
 				<a href="#contact"><i class="fa fa-3x fa-envelope social-icons"></i></a>
-				<a href="#about"><i class="fa fa-5x fa-chevron-down scroll-icon social-icons"></i></a>
+				<a href="#about"><i class="hidden-xs fa fa-5x fa-chevron-down scroll-icon social-icons"></i></a>
 			</div>
 		</div>
 	</div>
@@ -96,7 +95,7 @@
 			<ul class="skills">
 				<li><div class="wow fadeInLeft stats" data-wow-duration="1s" data-wow-delay=".5s" style="width:95%;"><i class="fa fa-code"></i> HTML</div></li>
 				<li><div class="wow fadeInLeft stats" data-wow-duration="1s" data-wow-delay=".5s" style="width:95%;"><i class="fa fa-code"></i> CSS</div></li>
-				<li><div class="wow fadeInLeft stats" data-wow-duration="1s" data-wow-delay=".5s" style="width:35%;"><i class="fa fa-code"></i> Javascript</div></li>
+				<li><div class="wow fadeInLeft stats" data-wow-duration="1s" data-wow-delay=".5s" style="width:35%;"><i class="fa fa-code"></i> <span class="hidden-xs hidden-sm hidden-md">Javascript</span><span class="hidden-lg">JS</span></div></li>
 				<li><div class="wow fadeInLeft stats" data-wow-duration="1s" data-wow-delay=".5s" style="width:40%;"><i class="fa fa-code"></i> PHP</div></li>
 				<li><div class="wow fadeInLeft stats" data-wow-duration="1s" data-wow-delay=".5s" style="width:45%;"><i class="fa fa-code"></i> SQL</div></li>
 				<li><div class="wow fadeInLeft stats" data-wow-duration="1s" data-wow-delay=".5s" style="width:75%;"><i class="fa fa-code"></i> Ruby on Rails</div></li>
@@ -138,9 +137,8 @@
 		  <div class="row">
 		    <div class="col-xs-12 col-md-offset-0 col-lg-10 col-lg-offset-1">
 		      <h1 class="text-center">Portfolio</h1>
-		      			<div class="about-divider"></div>
-
-		      <div id="filters" class="button-group">
+		      <div class="about-divider"></div>
+		      <div id="filters" class="button-group hidden-xs">
 						<input id="select-type-all" name="radio-set-1" type="radio" class="ff-selector-type-all" checked="checked" />
 						<label for="select-type-all" class="ff-label-type-all">All</label>
 						<input id="select-type-1" name="radio-set-1" type="radio" data-filter=".static" class="ff-selector-type-1" />
@@ -158,7 +156,7 @@
 			</div>
 
 			<div class="isotope">  
-				<div class="col-md-4 col-lg-3 element-item denver-webco rails-app wow slideInLeft " data-category="denver-webco, rails-app">
+				<div class="col-xs-offset-2 col-xs-8 col-sm-offset-1 col-sm-5 col-md-offset-0 col-md-4 col-lg-3 element-item denver-webco rails-app wow slideInLeft " data-category="denver-webco, rails-app">
 					<div class="folio-img">
     				<div class="img-wrap">
     					<div class="portfolio-overlay">K-ID's BMV App</div>
@@ -166,7 +164,7 @@
 		   			</div>
 		   		</div>
 		  	</div>
-		  	<div class="col-md-4 col-lg-3 element-item static wow slideInLeft " data-category="static">
+		  	<div class="col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-5 col-md-4 col-lg-3 element-item static wow slideInLeft " data-category="static">
 		  		<div class="folio-img">
     				<div class="img-wrap">
     					<div class="portfolio-overlay">Dropping Dimes Website</div>
@@ -174,7 +172,7 @@
 		    		</div>
 		    	</div>
 		  	</div>
-		  	<div class="col-md-4 col-lg-3 element-item static wow slideInRight " data-category="static">
+		  	<div class="hidden-xs col-sm-offset-1 col-sm-5 col-md-offset-0 col-md-4 col-lg-3 element-item static wow slideInRight " data-category="static">
 		  		<div class="folio-img">
     				<div class="img-wrap">
     					<div class="portfolio-overlay">The Only Inventory Database</div>
@@ -182,7 +180,7 @@
 		    		</div>
 		    	</div>
 		  	</div>
-		  	<div class="col-md-4 col-lg-3 element-item static wow slideInRight " data-category="static">
+		  	<div class="col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-5 col-md-4 col-lg-3 element-item static wow slideInRight " data-category="static">
 		  		<div class="folio-img">
     				<div class="img-wrap">
     					<div class="portfolio-overlay">Abrams Eyecare Website</div>
@@ -190,7 +188,7 @@
 				    </div>
 					</div>
 		  	</div>
-		  	<div class="col-md-4 col-lg-3 element-item seo wow slideInLeft" data-category="seo">
+		  	<div class="col-xs-offset-2 col-xs-8 col-sm-offset-1 col-sm-5 col-md-offset-0 col-md-4 col-lg-3 element-item seo wow slideInLeft" data-category="seo">
 		  		<div class="folio-img">
     				<div class="img-wrap">
     					<div class="portfolio-overlay">Walmart SEO / Product Uploads</div>
@@ -198,7 +196,7 @@
 		    		</div>
 		    	</div>
 		  	</div>
-		  	<div class="col-md-4 col-lg-3 element-item seo wow slideInLeft" data-category="seo">
+		  	<div class="col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-5 col-md-4 col-lg-3 element-item seo wow slideInLeft" data-category="seo">
 		  		<div class="folio-img">
     				<div class="img-wrap">
     					<div class="portfolio-overlay">Target SEO / Product Uploads</div>
@@ -206,7 +204,7 @@
 		    		</div>
 		    	</div>
 		  	</div>
-		  	<div class="col-md-4 col-lg-3 element-item denver-webco static wordpress wow slideInRight" data-category="denver-webco, static, wordpress">
+		  	<div class="col-xs-offset-2 col-xs-8 col-sm-offset-1 col-sm-5 col-md-offset-0 col-md-4 col-lg-3 element-item denver-webco static wordpress wow slideInRight" data-category="denver-webco, static, wordpress">
 		  		<div class="folio-img">
     				<div class="img-wrap">
     					<div class="portfolio-overlay">Hamilton Center Website</div>
@@ -214,7 +212,7 @@
 		    		</div>
 		    	</div>
 		  	</div>
-		  	<div class="col-md-4 col-lg-3 element-item static wow slideInRight" data-category="static">
+		  	<div class="col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-5 col-md-4 col-lg-3 element-item static wow slideInRight" data-category="static">
 		  		<div class="folio-img">
     				<div class="img-wrap">
     					<div class="portfolio-overlay">Tarter Bros Staining Website</div>
@@ -222,7 +220,7 @@
 		    		</div>
 		    	</div>
 		  	</div>
-		  	<div class="col-md-4 col-lg-3 element-item wow slideInLeft">
+		  	<div class="hidden-xs col-sm-offset-1 col-sm-5 col-md-offset-0 col-md-4 col-lg-3 element-item wow slideInLeft">
 		  		<div class="folio-img">
     				<div class="img-wrap">
     					<div class="portfolio-overlay">Hoffmaster Inc. Product Database</div>
@@ -230,7 +228,7 @@
 		    		</div>
 		    	</div>
 		  	</div>
-		  	<div class="col-md-4 col-lg-3 element-item static wow slideInLeft" data-category="static">
+		  	<div class="col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-5 col-md-4 col-lg-3 element-item static wow slideInLeft" data-category="static">
 		  		<div class="folio-img">
     				<div class="img-wrap">
     					<div class="portfolio-overlay">R&amp;B Architects Website</div>
@@ -238,7 +236,7 @@
 		    		</div>
 		    	</div>
 		  	</div>
-		  	<div class="col-md-4 col-lg-3 element-item rails-app static wow slideInRight" data-category="rails-app, static">
+		  	<div class="col-xs-offset-2 col-xs-8 col-sm-offset-1 col-sm-5 col-md-offset-0 col-md-4 col-lg-3 element-item rails-app static wow slideInRight" data-category="rails-app, static">
 		  		<div class="folio-img">
     				<div class="img-wrap">
     					<div class="portfolio-overlay">MyCampus Island App</div>
@@ -246,7 +244,7 @@
 		    		</div>
 		    	</div>
 		  	</div>
-		  	<div class="col-md-4 col-lg-3 element-item wow slideInRight">
+		  	<div class="hidden-xs col-sm-offset-0 col-sm-5 col-md-4 col-lg-3 element-item wow slideInRight">
 		  		<div class="folio-img">
     				<div class="img-wrap">
     					<div class="portfolio-overlay">Client Personal Collection Database</div>
@@ -254,7 +252,7 @@
 		    		</div>
 		    	</div>
 		  	</div>
-		  	<div class="col-md-4 col-lg-3 element-item static wow slideInLeft" data-category="static">
+		  	<div class="col-xs-offset-2 col-xs-8 col-sm-offset-1 col-sm-5 col-md-offset-0 col-md-4 col-lg-3 element-item static wow slideInLeft" data-category="static">
 		  		<div class="folio-img">
     				<div class="img-wrap">
     					<div class="portfolio-overlay">Ted Green Films Website</div>
@@ -262,7 +260,7 @@
 		    		</div>
 		    	</div>
 		  	</div>
-		  	<div class="col-md-4 col-lg-3 element-item static wordpress wow slideInLeft" data-category="static, wordpress">
+		  	<div class="col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-5 col-md-4 col-lg-3 element-item static wordpress wow slideInLeft" data-category="static, wordpress">
 		  		<div class="folio-img">
     				<div class="img-wrap">
     					<div class="portfolio-overlay">Open Mind Webs Website</div>
@@ -270,7 +268,7 @@
 		    		</div>
 		    	</div>
 		  	</div>
-		  	<div class="col-md-4 col-lg-3 element-item denver-webco static wordpress wow slideInRight" data-category="denver-webco, static, wordpress">
+		  	<div class="col-xs-offset-2 col-xs-8 col-sm-offset-1 col-sm-5 col-md-offset-0 col-md-4 col-lg-3 element-item denver-webco static wordpress wow slideInRight" data-category="denver-webco, static, wordpress">
 		  		<div class="folio-img">
     				<div class="img-wrap">
     					<div class="portfolio-overlay">Y8 Website</div>
@@ -278,7 +276,7 @@
 		    		</div>
 		    	</div>
 		  	</div>
-		  	<div class="col-md-4 col-lg-3 element-item rails-app wow slideInRight" data-category="rails-app">
+		  	<div class="hidden-xs col-sm-offset-0 col-sm-5 col-md-4 col-lg-3 element-item rails-app wow slideInRight" data-category="rails-app">
 		  		<div class="folio-img">
     				<div class="img-wrap">
     					<div class="portfolio-overlay">Mattchet Music App</div>
@@ -293,10 +291,10 @@
 
 <div id ="startups">
 	<div class="container">
-		<img src="img/mci-logo.png" class="img-center wow slideInRight">
+		<img src="img/mci-logo.png" class="img-center img-responsive wow slideInRight">
 		<p class="text-center wow slideInRight" style="padding-top:20px;"><i>Startup founded and developed by Matt Tarter</i></p>
 		<hr>
-		<div class="col-lg-11 col-lg-offset-1">
+		<div class="col-md-12 col-md-offset-0 col-lg-11 col-lg-offset-1">
 			<ul class="mci wow slideInLeft">
 				<li><i class="fa fa-check-square-o"></i> Revolutionary student housing web-based application </li>
 				<li><i class="fa fa-check-square-o"></i> Features real-time listings &amp; the Student Housing Encyclopedia</li>
@@ -331,7 +329,7 @@
 	</div>
 </div>
 
-<div class="copyright text-center animated bounceInUp">
+<div class="copyright text-center wow fadeInUp">
 	&copy; MATT TARTER 2016. ALL RIGHTS RESERVED &nbsp; | &nbsp; FRONT END DEVELOPER &nbsp; | &nbsp; DENVER, COLORADO
 </div>
 
