@@ -1,3 +1,11 @@
+@media screen and (max-width: 400px) {
+
+    .element-item {
+        width: 100%;
+        margin-left:0px;
+    }
+}
+
 @media screen and (max-width: 767px) {
     
     nav {
@@ -30,6 +38,19 @@
     .mci {
 	    font-size:18px;
 	}
+
+    #quote h1 {
+        font-size:26px;
+    }
+    
+    .wow {
+        visibility: visible !important;
+        -webkit-animation: none !important;
+        -moz-animation: none !important;
+        -o-animation: none !important;
+        -ms-animation: none !important;
+        animation: none !important;
+    }
 }
 
 @media screen and (min-width: 767px) and (max-width: 992px) {
@@ -45,6 +66,10 @@
 	#filters label {
 		font-size: 12px;
 	}
+
+    #quote h1 {
+        font-size:34px;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -52,4 +77,11 @@
 	#hero h1{
 		padding-top:20px;
 	}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+
+    #filters label {
+        font-size: 14px;
+    }
 }

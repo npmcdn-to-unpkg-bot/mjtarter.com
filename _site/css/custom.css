@@ -12,6 +12,7 @@ html, body {
 
 body {
     font-family: 'Ubuntu', sans-serif !important;
+    overflow-x:hidden;
 }
 
 .vert-middle {
@@ -392,6 +393,7 @@ ul.skills li {
     width:100%;
     overflow: hidden;
     background-image: url('../img/denver.png');
+    background-size:cover;
 }
 
     .header-unit video {
