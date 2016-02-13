@@ -15,6 +15,10 @@ body {
     overflow-x:hidden;
 }
 
+.message-sent {
+    padding:4px 0px;
+}
+
 .panel {
     box-shadow: 0px 32px 20px -20px #c0c0c0;
     border: solid 2px #e0e0e0;

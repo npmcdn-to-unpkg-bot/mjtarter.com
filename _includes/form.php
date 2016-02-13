@@ -8,7 +8,7 @@ if(isset($_POST['email'])) {
  
     $email_to = "mjtarter@openmindwebs.com";
  
-    $email_subject = "mjtarter.com Message";
+    $email_subject = "mjtarter.com message";
  
      
  
@@ -18,13 +18,13 @@ if(isset($_POST['email'])) {
  
         // your error code can go here
  
-        echo "We are very sorry, but there were error(s) found with the form you submitted. ";
+        echo "<section class='main-content p-vert-50 confirmation-body'> We are very sorry, but there were error(s) found with the form you submitted. ";
  
         echo "These errors appear below.<br /><br />";
  
         echo $error."<br /><br />";
  
-        echo "Please go back and fix these errors.<br /><br />";
+        echo "Please go back and fix these errors.</section>";
  
         die();
  
@@ -35,7 +35,7 @@ if(isset($_POST['email'])) {
     // validation expected data exists
  
     if(!isset($_POST['name']) ||
-  
+ 
         !isset($_POST['email']) ||
 
         !isset($_POST['message'])) {
@@ -45,10 +45,10 @@ if(isset($_POST['email'])) {
     }
    
     $name = $_POST['name']; // required
+  
+    $email_from = $_POST['email']; // required
  
-    $email = $_POST['email']; // required
- 
-    $message = $_POST['message']; // required
+    $message = $_POST['message']; // not required
 
      
  
@@ -90,10 +90,8 @@ if(isset($_POST['email'])) {
  
     $email_message .= "Name: ".clean_string($name)."\n";
   
-    $email_message .= "Email: ".clean_string($email)."\n\n";  
- 
-    $email_message .= clean_string($message)."\n";
-  
+    $email_message .= "Message: ".clean_string($message)."\n\n";  
+   
  
      
  
@@ -108,18 +106,3 @@ $headers = 'From: '.$email_from."\r\n".
 @mail($email_to, $email_subject, $email_message, $headers);  
  
 }?>
- 
- 
- 
-<!-- include your own success html here -->
- 
-{% include header.html %}
-
-<section class="main-content p-vert-50 confirmation-body">
-  <div class="container text-center">
-    <p class="h1">Message Sent!</p>
-      <p>Thank you for contacting me! I will be in touch shortly!</p>
-    </div>
-</section>
-
-{% include footer.html %}

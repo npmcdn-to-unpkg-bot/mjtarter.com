@@ -1,6 +1,132 @@
----
-layout: default
----
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matt Tarter | Web Developer</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,400italic,700' rel='stylesheet' type='text/css'>
+    <!-- Preload images so that isotope does not overlap them in the grid -->
+    <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/slicknav.min.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+  </head>
+  <body>
+
+    <?php
+ 
+if(isset($_POST['email'])) {
+ 
+     
+ 
+    // EDIT THE 2 LINES BELOW AS REQUIRED
+ 
+    $email_to = "mjtarter@openmindwebs.com";
+ 
+    $email_subject = "mjtarter.com message";
+ 
+     
+ 
+     
+ 
+    function died($error) {
+ 
+        // your error code can go here
+ 
+        echo "<section class='main-content p-vert-50 confirmation-body'> We are very sorry, but there were error(s) found with the form you submitted. ";
+ 
+        echo "These errors appear below.<br /><br />";
+ 
+        echo $error."<br /><br />";
+ 
+        echo "Please go back and fix these errors.</section>";
+ 
+        die();
+ 
+    }
+ 
+     
+ 
+    // validation expected data exists
+ 
+    if(!isset($_POST['name']) ||
+ 
+        !isset($_POST['email']) ||
+
+        !isset($_POST['message'])) {
+ 
+        died('We are sorry, but there appears to be a problem with the form you submitted.');         
+ 
+    }
+   
+    $name = $_POST['name']; // required
+  
+    $email_from = $_POST['email']; // required
+ 
+    $message = $_POST['message']; // not required
+
+     
+ 
+    $error_message = "";
+ 
+    $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
+ 
+  if(!preg_match($email_exp,$email_from)) {
+ 
+    $error_message .= 'The Email Address you entered does not appear to be valid.<br />';
+ 
+  }
+ 
+    $string_exp = "/^[A-Za-z .'-]+$/";
+ 
+  if(!preg_match($string_exp,$name)) {
+ 
+    $error_message .= 'The First Name you entered does not appear to be valid.<br />';
+ 
+  }
+ 
+ 
+  if(strlen($error_message) > 0) {
+ 
+    died($error_message);
+ 
+  } 
+     
+ 
+    function clean_string($string) {
+ 
+      $bad = array("content-type","bcc:","to:","cc:","href");
+ 
+      return str_replace($bad,"",$string);
+ 
+    }
+
+
+ 
+    $email_message .= "Name: ".clean_string($name)."\n";
+  
+    $email_message .= "Message: ".clean_string($message)."\n\n";  
+   
+ 
+     
+ 
+// create email headers
+ 
+$headers = 'From: '.$email_from."\r\n".
+ 
+'Reply-To: '.$email_from."\r\n" .
+ 
+'X-Mailer: PHP/' . phpversion();
+ 
+@mail($email_to, $email_subject, $email_message, $headers);  
+ 
+}?>
+<?php if(isset($_POST['email'])) echo '<div class="text-center message-sent"><i class="fa fa-envelope-o"></i> Your message has been sent!</div>' ?>
 
 <nav class="animated bounceInUp">
 	<div class="container" id="nav-wrapper">
@@ -319,15 +445,15 @@ layout: default
 		<div class="col-sm-8 col-sm-offset-2">
 			<h1>GET IN TOUCH</h1>
 			<h4>Have a question or want to work together?</h4>
-			<form action="form.php" method="post">
+			<form action="web-development.php" method="post">
 			  <div class="form-group">
-			    <input type="text" class="form-control" id="name" placeholder="YOUR FULL NAME">
+			    <input type="text" class="form-control" id="name" name="name" placeholder="YOUR FULL NAME">
 			  </div>
 			  <div class="form-group">
-			    <input type="text" class="form-control" id="email" placeholder="YOUR EMAIL">
+			    <input type="text" class="form-control" id="email" name="email" placeholder="YOUR EMAIL">
 			  </div>
 			  <div class="form-group">
-			    <textarea class="form-control" id="message" rows=6 placeholder="YOUR MESSAGE HERE"></textarea>
+			    <textarea class="form-control" id="message" name="message" rows=6 placeholder="YOUR MESSAGE HERE"></textarea>
 			  </div>
 			  <button type="submit" class="form-btn">Submit</button>
 			</form>
@@ -338,3 +464,38 @@ layout: default
 <div class="copyright text-center wow fadeInUp">
 	&copy; MATT TARTER 2016. ALL RIGHTS RESERVED &nbsp; | &nbsp; FRONT END DEVELOPER &nbsp; | &nbsp; DENVER, COLORADO
 </div>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/jquery.slicknav.min.js"></script>
+    <script>
+      $(function(){
+        $('#menu').slicknav();
+       });
+    </script>
+    <script src="js/vendor/isotope/isotope.pkgd.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- smooth scroll -->
+    <script>
+      $(function() {
+        $('a[href*="#"]:not([href="#"])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html, body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      });
+    </script>
+    <script src="js/vendor/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+
+  </body>
+</html>
