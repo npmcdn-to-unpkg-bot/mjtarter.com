@@ -42,137 +42,17 @@ body {
     }
 
 .vert-middle {
-    display:table-cell; 
+    display:table-cell;
     vertical-align:middle;
 }
 
 .img-center {
-    display:block; 
+    display:block;
     margin: 0px auto;
 }
 
 /* END GLOBAL STYLES */
 
-/* LANDING PAGE */
-#code-outer {
-    position:absolute;
-    top:0;
-    left:0;
-    width:50%;
-    height:100%;
-}
-
-#fitness-outer {
-    position:absolute;
-    top:0;
-    left:50%;
-    width:50%;
-    height:100%;
-}
-
-#code-container {
-	width:100%;
-	height:100%;
-	display:table;
-	z-index: 1;
-}
-
-.code-section, .fitness-section {
-	padding: 10px 0px;
-	display: table-cell;
-	vertical-align: middle;
-    background-color: rgba(0,0,0,.5);
-    color:white;
-}
-
-    .code-section h1, .fitness-section h1 {
-        color:orange;
-    }
-
-    .code-section h2, .fitness-section h2 {
-        color:white; 
-        padding:10px 10px;
-    }
-
-    .code-section hr, .fitness-section hr {
-        background-color:orange; 
-        height:5px; 
-        width:60%;
-    }
-
-    .code-section img, .fitness-section img {
-        border-radius:50%; 
-        width:70px;
-    }
-
-.videos-overlay {
-		background-color: rgba(255,255,255,.7);
-		padding:10px 0px;
-
-}
-
-.button {
-  box-shadow: 4px 4px #E0E0E0;
-  border-radius: 5px;
-  background:orange;
-  font-size:20px;
-  width:170px;
-  padding:10px 0px;
-  color:white;
-}
-    .button:hover {
-    	color: #ffffff;
-    	background-color: #000000;
-    	box-shadow: 5px 5px #D8D8D8;
-    }
-
-.vid-left {
-	position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 50%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -1;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-100%) translateY(-50%);
-    background-size: cover;
-    border-right:3px solid silver;
-}
-
-.vid-right {
-	position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 50%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -1;
-    -ms-transform: translateX(50%) translateY(50%);
-    -moz-transform: translateX(50%) translateY(50%);
-    -webkit-transform: translateX(50%) translateY(50%);
-    transform: translateX(0%) translateY(-50%);
-    background-size: cover;
-    border-left:3px solid silver;
-}
-/* End LANDING  PAGE */
-
-
-/* Fitness */
-
-#my-video {
-  max-width: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-
-
-/* Web Development */
 
 nav {
     height:60px;
@@ -188,7 +68,7 @@ nav {
     }
 
     nav p {
-        display:inline-block; 
+        display:inline-block;
         padding-top:11px;
     }
 
@@ -198,11 +78,11 @@ nav {
 
     nav ul {
         float:right;
-        font-size:18px; 
+        font-size:18px;
     }
 
         nav ul li {
-            display:inline-block; 
+            display:inline-block;
             padding:18px;
             font-weight:bold;
         }
@@ -227,14 +107,14 @@ nav {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     width:100%;
-    color:white; 
+    color:white;
     position:relative;
     height:100%;
     min-height:700px;
 }
 
     #hero h1 {
-        font-weight:bolder; 
+        font-weight:bolder;
         margin-top:0px;
         font-size:44px;
     }
@@ -254,11 +134,11 @@ nav {
     #hero a i:hover {
         color:#4bbbeb;
         -webkit-animation: pulse 1s;
-        animation: pulse 1s; 
+        animation: pulse 1s;
     }
 
 .hero-container {
-    display:table; 
+    display:table;
     height:100%;
     padding-top:30px;
 }
@@ -273,8 +153,8 @@ nav {
 }
 
     .box img {
-        height:150px; 
-        display:block; 
+        height:150px;
+        display:block;
         margin:0 auto;
     }
 
@@ -297,17 +177,17 @@ nav {
 }
 
     #about img {
-        border-radius:50%; 
+        border-radius:50%;
         box-shadow:
             0 0 0 10px hsl(0, 0%, 80%),
             0 0 0 15px hsl(0, 0%, 90%);
-        width:125px; 
-        display:block; 
+        width:125px;
+        display:block;
         margin:0px auto 0px auto;
     }
 
     #about p {
-        font-size: 17px; 
+        font-size: 17px;
         padding:0px 25px;
         margin-bottom:50px;
     }
@@ -357,7 +237,7 @@ ul.skills li {
     }
 
 .stats {
-    background-color:#4bbbeb; 
+    background-color:#4bbbeb;
     font-weight: bold;
     padding:10px 5px;
     border-right:1px solid black;
@@ -432,7 +312,7 @@ ul.skills li {
         transform: translateX(-50%) translateY(-50%);
         position: absolute;
         top: 30%;
-        left: 50%; 
+        left: 50%;
     }
 
     .header-unit video.fillWidth {
@@ -440,8 +320,8 @@ ul.skills li {
     }
 
 .quote-container {
-    display:table; 
-    height: 350px; 
+    display:table;
+    height: 350px;
     width:100%;
 }
 
@@ -463,7 +343,7 @@ ul.skills li {
     }
 
     #quote p {
-        font-size:20px; 
+        font-size:20px;
         padding-top:20px;
     }
 
@@ -480,8 +360,8 @@ ul.skills li {
 
 .portfolio-img {
     border-radius:3px;
-    margin-left:auto; 
-    margin-right:auto; 
+    margin-left:auto;
+    margin-right:auto;
     display:block;
     width:100%;
 }
@@ -498,9 +378,9 @@ ul.skills li {
     background:white;
     float:left;
     text-align:center;
-    box-shadow: 
-        0px 0px 0px 1px #aaa, 
-        1px 0px 0px 0px rgba(255,255,255,0.9) inset, 
+    box-shadow:
+        0px 0px 0px 1px #aaa,
+        1px 0px 0px 0px rgba(255,255,255,0.9) inset,
         0px 1px 2px rgba(0,0,0,0.2);
 }
 
@@ -521,8 +401,8 @@ ul.skills li {
     background: #4bbbeb;
     color: white;
     text-shadow: 0px 1px 1px rgba(0,0,0,0.3);
-    box-shadow: 
-        0px 0px 0px 1px #40496e, 
+    box-shadow:
+        0px 0px 0px 1px #40496e,
         0 2px 2px rgba(0,0,0,0.1) inset;
 }
 
@@ -554,13 +434,13 @@ ul.skills li {
 }
 
 .portfolio-overlay {
-    position:absolute; 
-    text-align:center; 
-    margin-top:20px; 
-    font-size:20px; 
-    z-index:10; 
-    font-weight:bold; 
-    width:94%; 
+    position:absolute;
+    text-align:center;
+    margin-top:20px;
+    font-size:20px;
+    z-index:10;
+    font-weight:bold;
+    width:94%;
     opacity:1;
     padding-right:3%;
     padding-left:3%;
@@ -581,7 +461,7 @@ ul.skills li {
     background-color:#f0f0f0;
     padding:70px 0px 100px 0px;
     background: linear-gradient(
-      rgba(0, 0, 0, 0.65), 
+      rgba(0, 0, 0, 0.65),
       rgba(0, 0, 0, 0.65)
     ), url('../img/startups.jpg');
     background-size:cover;
@@ -595,7 +475,7 @@ ul.skills li {
   left: 50%;
 }
 
-#center-content { 
+#center-content {
   float: left;
   position: relative;
   left: -50%;
